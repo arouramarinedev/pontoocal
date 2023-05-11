@@ -41,7 +41,7 @@ function StepOne() {
             </div>
             <div className="row">
                 <div className="col">
-                    <ol className="sblue" type="a">
+                    <ol className="sblue" >
                       <li>Type in the Length in feet</li>
                       <li>Type in the Radius in inches</li>
                       <li>Press CALCULATE</li>

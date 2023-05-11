@@ -88,8 +88,8 @@ function New() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-                        <div className="border rounded-4 border-dark-subtle bg-white pt-2 ps-1">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6" >
+                        <div className="border rounded-4 border-dark-subtle bg-white pt-2 ps-1" style={{ marginBottom: '230px'}} style={{ marginTop: '70px'}}>
                             <div className="row">
                                 <div className="col">
                                     <p className="fw-bold text-danger"><em>Easy to Use, Step by Step, Automatic Calculator to:</em></p>
@@ -97,12 +97,12 @@ function New() {
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <ol className="sblue">
+                                    <ul className="sblue">
                                         <li>Calculate the Sq. Ft. of your pontoons</li>
                                         <li>Determine the product you need</li>
                                         <li>Get a Quote</li>
                                         <li>Get your 3 Year Factory Warranty on the finish</li>
-                                    </ol>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
