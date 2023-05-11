@@ -3,7 +3,7 @@ import Head from '../Head';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import trioon from '../../img/trioon.jpg';
+import trioon from '../../img/trioon.png';
 // import { newLocation } from "../../redux/location";
 
 function Home() {

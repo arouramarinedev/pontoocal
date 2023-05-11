@@ -2,7 +2,7 @@ import newImg from '../../img/pontoon-calculator/new.jpg';
 import newImg2 from '../../img/pontoon-calculator/new-1.jpg';
 import oldImg from '../../img/before-un.jpg';
 import oldImg2 from '../../img/before-un-2.jpg';
-import trioon from '../../img/trioon.jpg';
+
 
 import React from 'react'
 import StepOne from '../StepOne';
