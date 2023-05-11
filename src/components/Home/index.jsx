@@ -21,8 +21,8 @@ function Home() {
                         <Head />
                     </div>
                     <div className="col text-center" >
-                        <img src="trioon.png"/>
-                        <span className="text-danger fs-2 fw-bold ">New Pontoon <br /> Step by Step Calculator</span>
+                        
+                        
                     </div>
                 </div>
                 {/* <FirstInfo />

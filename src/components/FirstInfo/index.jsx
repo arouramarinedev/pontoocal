@@ -2,6 +2,7 @@ import newImg from '../../img/pontoon-calculator/new.jpg';
 import newImg2 from '../../img/pontoon-calculator/new-1.jpg';
 import oldImg from '../../img/before-un.jpg';
 import oldImg2 from '../../img/before-un-2.jpg';
+import trioon from '../../img/trioon.jpg';
 
 import React from 'react'
 import StepOne from '../StepOne';
@@ -89,9 +90,13 @@ function New() {
                         </div>
                     </div>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-6" >
+                        <img src={trioon}/>
                         <div className="border rounded-4 border-dark-subtle bg-white pt-2 ps-1" style={{ marginBottom: '230px'}} style={{ marginTop: '70px'}}>
                             <div className="row">
                                 <div className="col">
+                                      
+                                    <span class="text-danger fs-2 fw-bold text-center d-flex align-items-center justify-content-center">New Pontoon <br /> Step by Step Calculator</span>
+                                        
                                     <p className="fw-bold text-danger"><em>Easy to Use, Step by Step, Automatic Calculator to:</em></p>
                                 </div>
                             </div>
