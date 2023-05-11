@@ -3,6 +3,7 @@ import Head from '../Head';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import trioon from '../../img/trioon.jpg';
 // import { newLocation } from "../../redux/location";
 
 function Home() {
@@ -22,7 +23,7 @@ function Home() {
                     </div>
                     <div className="col text-center" >
                         
-                        
+                         <img src={trioon}  style={{ width: "250px", height: "100px"}}/> 
                     </div>
                 </div>
                 {/* <FirstInfo />

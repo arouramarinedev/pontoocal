@@ -33,10 +33,10 @@ function StepOne() {
 
   return (
     <>
-        <div className="container">
+        <div className="container"  style={{ marginTop: '50px'}}>
             <div className="row">
-                <div className="col mt-3">
-                    <h3 className="text-danger fw-bold mt-1"><em>Step 1.</em></h3>
+                <div className="col mt-3" style= {{marginBottom: '30px'}}>
+                    <h3 className="text-danger fw-bold mt-1 s"><em>Step 1.</em></h3>
                 </div>
             </div>
             <div className="row">
