@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux'
 import CostComparison from './CostComparison'
 import HowTo from './HowTo'
@@ -12,6 +12,15 @@ import ScrollToTop from "react-scroll-to-top";
 
 
 function Landing() {
+    const [isOpen, setIsOpen] = useState(false);
+    
+    function BenefitsDropdown() {
+        const [isOpen, setIsOpen] = useState(false);
+    }    
+
+    function toggleDropdown() {
+        setIsOpen(!isOpen);
+    }
 
     const sqft = useSelector((state) => state.squareft.value);
     const condition = useSelector((state) => state.conditioner.value);
@@ -37,9 +46,16 @@ function Landing() {
                     </div>
                 </div>
                 <div className="row ms-1">
+
                     <div className="col">
-                        <h5 className="text-danger fw-bold mt-4">Benefits of Protecting New Pontoons with Alumetron and VS721:</h5>
-                        <ul className="sblue fw-bold check-marks">
+                        <h5 className="text-danger fw-bold mt-4">Top 7 Benefits of Protecting Your New Pontoons with Alumetron and VS721</h5>
+                        <h6 className="text-danger fw-bold mt-2">
+                          <button className="btn btn-link text-reset enlarge-on-hover" onClick={toggleDropdown}  style={{ fontSize: "2 rem" }}>
+                            CLICK HERE TO FIND OUT!
+                          </button>
+                        </h6>
+                        {isOpen && (
+                          <ol className="sblue fw-bold }">
                             <li><span className="ms-1">Pontoons </span>Stay Clean and Shiny Year After Year</li>
                             <li><span className="ms-1">Pride </span>of Ownership. Your Boat is a Reflection of Your Personality.</li>
                             <li><span className="ms-1">3 Year </span>Transferable Factory Warranty.</li>
@@ -47,15 +63,12 @@ function Landing() {
                             <li><span className="ms-1">Better </span>Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
                             <li><span className="ms-1">Easier </span>Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
                             <li><span className="ms-1">Lasts </span>up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
-                        </ul>
+                          </ol>
+                        )}  
                     </div>
-                    <div className="text-end d-flex align-items-center justify-content-end" onClick={scrollToBottom} >
-                     <button type="button" className="btn btn-warning me-4 mb-1">
-                        <i className="cursor-pointer bi bi-arrow-down-circle-fill fs-4 me-2"></i>
-                        <span className="fs-5 me-3 cursor-pointer">Scroll Down</span>
-                    </button>
-
-                    </div>
+                                  
+                                            
+                    
                 </div>
                 <Products />
                 <Buttons />
@@ -73,5 +86,10 @@ function Landing() {
         </>
     )
 }
+ 
+          
+
 
 export default Landing
+
+     

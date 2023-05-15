@@ -97,7 +97,7 @@ function New() {
                             <div className="row" >
                                 <div className="col">
                                       
-                                        <span class="  fs-2 fw-bold text-center d-flex align-items-center justify-content-center"  style={{ marginBottom: '40px'}} >New Pontoon Boat <br /> Step by Step Calculator</span>
+                                        <span class=" sblue fs-2 fw-bold text-center d-flex align-items-center justify-content-center"  style={{ marginBottom: '40px'}}  >New Pontoon Boat <br /> Step by Step Calculator</span>
                                         
                                     <p className="fw-bold text-danger"  style={{ marginBottom: '30px'}}><em>Easy to Use, Step by Step, Automatic Calculator to:</em></p>
                                 </div>

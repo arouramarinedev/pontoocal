@@ -24,8 +24,8 @@ function Home() {
                         <Head />
                       </div>
                       <div className="col text-center" style={{position: "relative"}}>
-                        <div style={{position: "absolute", top: "-20px", left: "50%", transform: "translateX(-50%)", zIndex: "1"}}>
-                          <img src={trioon} style={{ width: "250px", height: "100px"}}/> 
+                        <div style={{position: "absolute", top: "-40px", left: "50%", transform: "translateX(-50%)", zIndex: "1"}}>
+                          <img src={trioon} style={{ width: "250px", height: "113px"}}/> 
                         </div>
                       </div>
                     </div>
