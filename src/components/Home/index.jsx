@@ -17,15 +17,18 @@ function Home() {
         <>
             <div className="calculator container bg-light-subtle" >
                 {/* <Head /> */}
-                <div className="row align-items-center">
-                    <div className="col">
+                
+
+                    <div className="row align-items-center">
+                      <div className="col">
                         <Head />
+                      </div>
+                      <div className="col text-center" style={{position: "relative"}}>
+                        <div style={{position: "absolute", top: "-20px", left: "50%", transform: "translateX(-50%)", zIndex: "1"}}>
+                          <img src={trioon} style={{ width: "250px", height: "100px"}}/> 
+                        </div>
+                      </div>
                     </div>
-                    <div className="col text-center" >
-                        
-                         <img src={trioon}  style={{ width: "250px", height: "100px"}}/> 
-                    </div>
-                </div>
                 {/* <FirstInfo />
                 <StepOne /> */}
                 <New />
