@@ -50,12 +50,12 @@ function Landing() {
                     <div className="col">
                         <h5 className="text-danger fw-bold mt-4">Top 7 Benefits of Protecting Your New Pontoons with Alumetron and VS721</h5>
                         <h6 className="text-danger fw-bold mt-2">
-                          <button className="btn btn-link text-reset enlarge-on-hover" onClick={toggleDropdown}  style={{ fontSize: "2 rem" }}>
+                          <button type="button" className="btn btn-light me-4 mt-3" onClick={toggleDropdown}  style={{ fontSize: "1.5rem" }}>
                             CLICK HERE TO FIND OUT!
                           </button>
                         </h6>
                         {isOpen && (
-                          <ol className="sblue fw-bold }">
+                          <ol className="sblue fw-bold mt-4 ">
                             <li><span className="ms-1">Pontoons </span>Stay Clean and Shiny Year After Year</li>
                             <li><span className="ms-1">Pride </span>of Ownership. Your Boat is a Reflection of Your Personality.</li>
                             <li><span className="ms-1">3 Year </span>Transferable Factory Warranty.</li>
@@ -66,10 +66,16 @@ function Landing() {
                           </ol>
                         )}  
                     </div>
+                    <h7 className="text-danger fw-bold mt-2">
+                          <button className="btn btn-lg btn-danger" style={{ fontSize: "1.5rem" }}>
+                            HOW TO APPLY!
+                          </button>
+                    </h7>
                                   
                                             
                     
                 </div>
+
                 <Products />
                 <Buttons />
                 <div className="text-end d-flex align-items-center justify-content-end" onClick={scrollToBottom} >
@@ -79,9 +85,9 @@ function Landing() {
                     </button>
 
                     </div>
-                <CostComparison />
-              
+                
                 <HowTo />
+                <CostComparison />
             </div>
         </>
     )

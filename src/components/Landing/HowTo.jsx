@@ -7,7 +7,7 @@ const HowTo = () => {
                 <div><h3 className="sblue fw-bold text-center mb-3">How-to Video</h3></div>
                 <div className="col mt-2">
                     <div className="text-center mb-3 mx-auto">
-                        <iframe width={310} height={170}
+                        <iframe width={510} height={370}
                             src="https://www.youtube.com/embed/HzqTJmJ6n8U"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
