@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useSelector } from 'react-redux'
 import CostComparison from './CostComparison'
 import HowTo from './HowTo'
@@ -7,7 +7,8 @@ import Products from './Products';
 import Buttons from './Buttons';
 import ScrollDownButton from './ScrollDownButton';
 import ScrollToTop from "react-scroll-to-top";
-
+import { FaYoutube,FaCircle, FaRegDotCircle} from 'react-icons/fa';
+import handleClick from './ScrollDown';
 
 
 
@@ -34,9 +35,18 @@ function Landing() {
         });
       };
 
+       const HowToRef = useRef(null);
+
+  function scrollToHowTo() {
+        HowToRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  
+
+ 
 
     return (
-        <>
+        <>         
           <ScrollToTop color="#0070c0" />
             <div className="container calculator bg-light-subtle">
                 <div className="row">
@@ -48,10 +58,12 @@ function Landing() {
                 <div className="row ms-1">
 
                     <div className="col">
-                        <h5 className="text-danger fw-bold mt-4">Top 7 Benefits of Protecting Your New Pontoons with Alumetron and VS721</h5>
+                        
                         <h6 className="text-danger fw-bold mt-2">
                           <button type="button" className="btn btn-light me-4 mt-3" onClick={toggleDropdown}  style={{ fontSize: "1.5rem" }}>
-                            CLICK HERE TO FIND OUT!
+                            <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
+                            &nbsp;&nbsp;&nbsp;Top 10 Benfits of protecting your Pontoons
+                            
                           </button>
                         </h6>
                         {isOpen && (
@@ -63,14 +75,28 @@ function Landing() {
                             <li><span className="ms-1">Better </span>Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
                             <li><span className="ms-1">Easier </span>Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
                             <li><span className="ms-1">Lasts </span>up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
+
                           </ol>
                         )}  
                     </div>
                     <h7 className="text-danger fw-bold mt-2">
-                          <button className="btn btn-lg btn-danger" style={{ fontSize: "1.5rem" }}>
-                            HOW TO APPLY!
+                           
+                           <button type="button" className="btn btn-light me-4 mt-3"   onClick={handleClick} style={{ fontSize: "1.5rem" }}>
+                            <FaYoutube icon="fa-brands fa-youtube"  style={{color: "#000000", fontSize: "33px"}} />
+                            &nbsp;&nbsp;&nbsp;How to apply?
+                            
+                        
+
                           </button>
                     </h7>
+
+                    <h8 className="text-danger fw-bold mt-2">
+                           <button type="button" className="btn btn-light me-4 mt-3" onClick={scrollToBottom}  style={{ fontSize: "1.5rem" }}>
+                           <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
+                            &nbsp;&nbsp;&nbsp;Do It your self cost Cost Comparison
+                           
+                          </button>
+                    </h8>
                                   
                                             
                     
@@ -85,8 +111,9 @@ function Landing() {
                     </button>
 
                     </div>
-                
-                <HowTo />
+                <section id="my-section">
+                    <HowTo />
+                </section>    
                 <CostComparison />
             </div>
         </>
