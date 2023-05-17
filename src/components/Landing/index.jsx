@@ -39,7 +39,12 @@ function Landing() {
 
   function scrollToHowTo() {
         HowToRef.current.scrollIntoView({ behavior: 'smooth' });
+
     }
+    const handleClick = () => {
+      const section = document.getElementById("my-section");
+      section.scrollIntoView({ behavior: "smooth" });
+    };
 
   
 
@@ -67,23 +72,24 @@ function Landing() {
                           </button>
                         </h6>
                         {isOpen && (
-                          <ol className="sblue fw-bold mt-4 ">
-                            <li><span className="ms-1">Pontoons </span>Stay Clean and Shiny Year After Year</li>
-                            <li><span className="ms-1">Pride </span>of Ownership. Your Boat is a Reflection of Your Personality.</li>
-                            <li><span className="ms-1">3 Year </span>Transferable Factory Warranty.</li>
-                            <li><span className="ms-1">Greater </span>Trade or Resale Value. Adding $5,000 to $10,000 is Common.</li>
-                            <li><span className="ms-1">Better </span>Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
-                            <li><span className="ms-1">Easier </span>Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
-                            <li><span className="ms-1">Lasts </span>up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
-
-                          </ol>
+                            <div className="text-center border border-primary rounded mt-4">
+                              <ol className="sblue fw-bold p-3" style={{ textAlign: "center", listStylePosition: "inside", paddingInlineStart: 0 }}>
+                                <li><span className="ms-1">Pontoons</span> Stay Clean and Shiny Year After Year</li>
+                                <li><span className="ms-1">Pride</span> of Ownership. Your Boat is a Reflection of Your Personality.</li>
+                                <li><span className="ms-1">3 Year</span> Transferable Factory Warranty.</li>
+                                <li><span className="ms-1">Greater</span> Trade or Resale Value. Adding $5,000 to $10,000 is Common.</li>
+                                <li><span className="ms-1">Better</span> Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
+                                <li><span className="ms-1">Easier</span> Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
+                                <li><span className="ms-1">Lasts</span> up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
+                              </ol>
+                            </div>
                         )}  
                     </div>
                     <h7 className="text-danger fw-bold mt-2">
                            
                            <button type="button" className="btn btn-light me-4 mt-3"   onClick={handleClick} style={{ fontSize: "1.5rem" }}>
                             <FaYoutube icon="fa-brands fa-youtube"  style={{color: "#000000", fontSize: "33px"}} />
-                            &nbsp;&nbsp;&nbsp;How to apply?
+                            &nbsp;&nbsp;&nbsp;How To YouTube Video?
                             
                         
 
@@ -93,7 +99,7 @@ function Landing() {
                     <h8 className="text-danger fw-bold mt-2">
                            <button type="button" className="btn btn-light me-4 mt-3" onClick={scrollToBottom}  style={{ fontSize: "1.5rem" }}>
                            <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
-                            &nbsp;&nbsp;&nbsp;Do It your self cost Cost Comparison
+                            &nbsp;&nbsp;&nbsp;Dealer Applied VS DIY Comparison
                            
                           </button>
                     </h8>
