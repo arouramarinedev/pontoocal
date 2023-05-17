@@ -99,11 +99,11 @@ function SecondPage() {
           <div className="row ms-5 justify-content-center">
             <div className="col-10 border rounded bg-white shadow">
               <p className="mt-1 fs-4">The Pontoons on my boat are:</p>
-              <ol>
+              <ul style={{ listStyle: 'none' }}>
                 <li className="mb-1">
                   {/* <span className="ms-3 fs-5">Clean and Shiny</span> */}
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" id="inlineCheckbox1" name="clean" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" id="inlineCheckbox1"  style={{ width: '20px', height: '20px', border: '2px solid #333' }} name="clean" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="inlineCheckbox1">Clean and Shiny</label>
                   </div>
                   {/* <div className="form-check form-check-inline sblue d-inline-flex align-items-center">
@@ -114,50 +114,50 @@ function SecondPage() {
                 <li className="my-1">
                   {/* <span className="ms-3 fs-5">Raw Aluminum (Mill Finish)</span> */}
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="mill1" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="mill1" style={{ width: '20px', height: '20px', border: '2px solid #333' }}  defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="mill1">Raw Aluminum (Mill Finish)</label>
                   </div>
                 </li>
                 <li className="my-1">
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="mirror1" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="mirror1" style={{ width: '20px', height: '20px', border: '2px solid #333' }} defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="mirror1">Raw Aluminum Polished to a Mirror Finish</label>
                   </div>
                 </li>
                 <li className="my-1">
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="pabove1" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="pabove1" style={{ width: '20px', height: '20px', border: '2px solid #333' }} defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="pabove1">Painted Above the Waterline (Factory Finish)</label>
                   </div>
                 </li>
                 <li className="my-1">
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="pbelow1" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="pbelow1" style={{ width: '20px', height: '20px', border: '2px solid #333' }} defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="pbelow1">Painted Below the Waterline (Factory Finish)</label>
                   </div>
                 </li>
                 <li className="my-1">
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="pfoul1" defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="pfoul1" style={{ width: '20px', height: '20px', border: '2px solid #333' }} defaultValue="cleany" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="pfoul1">Painted Below the Waterline with Anti-Fouling Paint</label>
                   </div>
                 </li>
                 <li className="my-1">
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="whites1" defaultValue="cleann" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="whites1" style={{ width: '20px', height: '20px', border: '2px solid #333' }} defaultValue="cleann" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="whites1">Stained with white streaks or spots</label>
                   </div>
                 </li>
                 <li className="my-1">
                   <div className="form-check form-check-inline sblue ms-2 d-inline-flex align-items-center">
-                    <input required className="form-check-input" type="radio" name="clean" id="darks1" defaultValue="cleann" onClick={(e) => setInputCondition(e.target.value)} />
+                    <input required className="form-check-input" type="radio" name="clean" id="darks1" style={{ width: '20px', height: '20px', border: '2px solid #333' }} defaultValue="cleann" onClick={(e) => setInputCondition(e.target.value)} />
                     <label className="form-check-label fs-5 ms-2" htmlFor="darks1">Stained with dark steaks or smudges</label>
                   </div>
                 </li>
                 <li>
                   {/* <span className="fs-5 ms-3 sblue">Other </span> */}
                   <div className="form-check form-check-inline sblue d-inline-flex align-items-center ms-2">
-                    &nbsp;  <input className="form-check-input" type="radio" name="clean" id="other" onClick={(e) => handleOther(e)} />
+                    &nbsp;  <input className="form-check-input" type="radio"  name="clean" id="other" style={{ width: '20px', height: '20px', border: '2px solid #333' }} onClick={(e) => handleOther(e)} />
                     <span className="form-check-label ms-2 fs-5">Other </span>
                   </div>
                   {other && <>
@@ -169,7 +169,7 @@ function SecondPage() {
                  
                   </>}
                 </li>
-              </ol>
+              </ul>
             </div>
           </div>
           <div className="row ms-1">
