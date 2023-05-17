@@ -47,7 +47,7 @@ function Landing() {
     };
 
     const buttonStyle = {
-        backgroundColor: 'gray',
+        backgroundColor: '#D3D3D3',
         color: 'white',
         fontSize: '1.5rem',
         transition: 'background-color 0.3s ease', // Adding transition for smooth effect
@@ -57,7 +57,8 @@ function Landing() {
 
     return (
         <>         
-          <ScrollToTop color="#000000" style={{ position: "fixed", bottom: "20px", left: "1420px" }} />
+          <ScrollToTop color="#ffffff" style={{ position: "fixed", bottom: "300px", left: "1420px", backgroundColor: "#000000", width: "60px",
+                height: "60px" }} />
             <div className="container calculator bg-light-subtle">
                 <div className="row">
                     <div className="col">
@@ -71,11 +72,13 @@ function Landing() {
                         
                         <h6 className="text-danger fw-bold mt-2">
                           <button  type="button"
-                                className="btn btn-lg btn-success me-4 mt-3"
+                                className="btn btn-lg  me-4 mt-3"
                                 onClick={toggleDropdown}
                                 style={buttonStyle}
-                                onMouseEnter={(e) => { e.target.style.backgroundColor = 'darkgray'; }}
-                                onMouseLeave={(e) => { e.target.style.backgroundColor = 'gray'; }}>
+                                onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
+                                
+                              
+                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
                                 <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
                                  &nbsp;&nbsp;&nbsp;Top 10 Benfits of protecting your Pontoons
                             
@@ -83,7 +86,7 @@ function Landing() {
                         </h6>
                         {isOpen && (
                             <div className= "border border-primary rounded mt-4">
-                              <ul className= "sblue" style={{ listStyle: 'none' }}>
+                              <ul className= "sblue" style={{ listStyle: 'none', fontWeight: 'bold', fontSize:"17px" }}>
                                 <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Pontoons</span> Stay Clean and Shiny Year After Year</li>
                                 <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Pride</span> of Ownership. Your Boat is a Reflection of Your Personality.</li>
                                 <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Three Year</span> Transferable Factory Warranty.</li>
@@ -97,9 +100,16 @@ function Landing() {
                     </div>
                     <h7 className="text-danger fw-bold mt-42">
                            
-                           <button type="button" className="btn btn-lg btn-success me-4 mt-3"   onClick={handleClick} style={{ fontSize: "1.5rem" }}>
-                            <FaYoutube icon="fa-brands fa-youtube"  style={{color: "#000000", fontSize: "33px"}} />
-                            &nbsp;&nbsp;&nbsp;How To YouTube Video?
+                           <button type="button" 
+                                
+                                className="btn btn-lg me-4 mt-3"
+                                onClick={handleClick}
+                                style={buttonStyle}
+                                onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
+                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
+                                <FaYoutube icon="fa-brands fa-youtube"  
+                                style={{color: "#000000", fontSize: "33px"}} />
+                                &nbsp;&nbsp;&nbsp;How To YouTube Video?
                             
                         
 
@@ -107,7 +117,12 @@ function Landing() {
                     </h7>
 
                     <h8 className="text-danger fw-bold mt-2">
-                           <button type="button" className="btn btn-lg btn-success me-4 mt-3" onClick={scrollToBottom}  style={{ fontSize: "1.5rem" }}>
+                            <button  type="button"
+                                className="btn btn-lg me-4 mt-3"
+                                onClick={scrollToBottom}
+                                style={buttonStyle}
+                                onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
+                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
                            <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
                             &nbsp;&nbsp;&nbsp;Dealer Applied VS DIY Comparison
                            
@@ -121,18 +136,20 @@ function Landing() {
                     <Products />
                     <Buttons />
                 </div>
-                <div className="text-end d-flex align-items-center justify-content-end" onClick={scrollToBottom} >
-                     <button type="button" className="btn btn-lg btn-success me-4 mt-3">
-                        <i className="cursor-pointer bi bi-arrow-down-circle-fill fs-4 me-2"></i>
-                        <span className="fs-5 me-3 cursor-pointer">Scroll Down</span>
-                    </button>
-
-                    </div>
-                <section id="my-section">
+                
+                <section  id="my-section">
                     <HowTo />
                 </section>    
                 <CostComparison />
+                <div style={{ marginBottom: '50px' }}>
+                    <p>&nbsp;</p>
+                </div> 
+
             </div>
+             <div style={{ marginBottom: '50px' }}>
+                    <p>&nbsp;</p>
+                </div> 
+            
         </>
     )
 }

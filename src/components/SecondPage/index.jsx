@@ -89,7 +89,7 @@ function SecondPage() {
         <div className="calculator container bg-body">
           <div className="row ms-1">
             <div className="col">
-              <h2 className="text-danger text-center fw-bold my-4">Your Pontoons Total Area is:</h2>
+              <h2 className="text-danger text-center fw-bold my-4">Your Pontoons Total Area is: (</h2>
               <h1 className="text-danger text-center fw-bold"><span className="border border-dark-subtle shadow rounded bg-white px-2">{Math.round(sqFt)} Sq. Ft.</span></h1>
               <h2 className="text-danger fw-bold mt-3"><em>Step 2.</em></h2>
               <p className="sblue ms-5 me-3 text-center" style={{ fontSize: '18px', }}>To select the right products to protect your new pontoons, select which item best
