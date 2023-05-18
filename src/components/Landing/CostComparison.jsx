@@ -28,7 +28,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -37,7 +37,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -47,7 +47,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -55,8 +55,8 @@ const CostComparison = () => {
             NDATA500.map((item) => {
                 return (
                     <tr>
-                        <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td style="white-space: nowrap;">{item.title}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -66,7 +66,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -75,7 +75,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -85,7 +85,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -94,7 +94,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -105,7 +105,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -114,7 +114,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -125,7 +125,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -134,7 +134,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -144,7 +144,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -153,7 +153,7 @@ const CostComparison = () => {
                 return (
                     <tr>
                         <td>{item.title}</td>
-                        <td>{item.price}</td>
+                        <td className="text-end">{item.price}</td>
                     </tr>
                 );
             })
@@ -200,7 +200,9 @@ const CostComparison = () => {
         totalDecide = condition == 'cleany' ? DATA200T.map((item) => item.total) : NDATA200T.map((item) => item.total)
     }
 
-
+    const haul2 = 0;
+    const lift2 = 0;
+    const wash2 = 0;
     const haul = 62;
     const lift = 62;
     const wash = Math.round(sqft * 0.2);
@@ -208,6 +210,7 @@ const CostComparison = () => {
     const coatsVs = Math.round(sqft * 1.61);
     const materialCost = Math.round(subtotalDecide);
     const subTotal = haul + lift + wash + coatsAlumetron + coatsVs + materialCost
+
 
 
 
@@ -235,31 +238,29 @@ const CostComparison = () => {
                             </tr>
                         </thead>
                         <tbody >
+                            {decide}
                             <tr>
                                 <td>Haul, Move & Block</td>
-                                <td>${haul}</td>
+                                <td className="text-end">${haul}</td>
                             </tr>
                             <tr>
                                 <td>Lift, Move & Launch</td>
 
-                                <td>${lift}</td>
+                                <td className="text-end">${lift}</td>
                             </tr>
                             <tr>
                                 <td>Wash & prep pontoons</td>
-                                <td>${wash}</td>
+                                <td className="text-end">${wash}</td>
                             </tr>
                             <tr>
                                 <td>Apply 4 coats Alumetron</td>
-                                <td>${coatsAlumetron}</td>
+                                <td className="text-end">${coatsAlumetron}</td>
                             </tr>
                             <tr>
                                 <td>Apply 2 coats VS721 & Buff</td>
-                                <td>${coatsVs}</td>
+                                <td className="text-end">${coatsVs}</td>
                             </tr>
-                            <tr>
-                                <td>Materials Cost</td>
-                                <td>${materialCost}</td>
-                            </tr>
+                           
                             <tr className="fw-bold text-danger">
                                 <td>Subtotal</td>
                                 <td>${subTotal}</td>
@@ -274,11 +275,34 @@ const CostComparison = () => {
                         <thead>
                             <tr>
                                 <th scope="col" className="fs-5">Products</th>
-                                <th scope="col" className="fs-5">Cost</th>
+                                <th scope="col" className="fs-5 text-end">Cost</th>
+                            </tr>
+                             {decide}
+                             <tr>
+                                <td>Haul, Move & Block</td>
+                                <td className="text-end">${haul2}</td>
+                            </tr>
+                            <tr>
+                                <td>Lift, Move & Launch</td>
+
+                                <td className="text-end">${lift2}</td>
+                            </tr>
+                            <tr>
+                                <td>Wash & prep pontoons</td>
+                                <td className="text-end">${wash2}</td>
+                            </tr>
+                            <tr>
+                                <td>Apply 4 coats Alumetron</td>
+                                <td className="text-end">${coatsAlumetron}</td>
+                            </tr>
+                            <tr>
+                                <td>Apply 2 coats VS721 & Buff</td>
+                                <td className="text-end">${coatsVs}</td>
                             </tr>
                         </thead>
                         <tbody>
-                            {decide}
+                            
+
                             <tr className="fw-bold text-success">
                                 <td>Discount</td>
                                 <td>- ${discountDecide}</td>
