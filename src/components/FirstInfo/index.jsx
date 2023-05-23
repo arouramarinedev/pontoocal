@@ -1,5 +1,5 @@
-import newImg from '../../img/pontoon-calculator/new.jpg';
-import newImg2 from '../../img/pontoon-calculator/new-1.jpg';
+import bill1 from '../../img/pontoon-calculator/bill1.jpg';
+import bill2 from '../../img/pontoon-calculator/bill2.jpg';
 import oldImg from '../../img/before-un.jpg';
 import oldImg2 from '../../img/before-un-2.jpg';
 
@@ -18,28 +18,34 @@ function New() {
                             Protect the Factory Finish on your Pontoons for up to 10 years
                         </em>
                         </h4>
-                        <h5 className="text-danger fw-bold"><em><span className="mx-1">✓ </span>Get a 3 Year Factory Warranty!</em></h5>
-                        <div className="row mt-4">
+                        <h5 className="text-danger fw-bold fs-3"><em><span className="mx-1">✓ </span>Get a 3 Year Factory Warranty!</em></h5>
+                        <div className="row mt-2">
                             <div className="col">
                                 <p className="sblue"><span className="text-danger"><b><em>Protected</em></b></span>
                                     <span><br />New Pontoons protected with <b>Alumetron</b> and <b>VS721</b></span>
                                 </p>
                                 <div className="row">
-                                    <div className="col-5 col-sm-5 col-md-5 col-lg-5">
-                                        <Popup 
-                                            imagelink= {newImg}
-                                            alttext = "new pontoon boat protected with Alumetron"
-                                            mtarget = "#exampleModal1"
-                                            mid = "exampleModal1"
-                                            
-                                        />
-                                       
-                                        {/* <a href={newImg} rel="noreferrer" target="_blank"><img className="img-fluid" src={newImg} alt="new pontoon boat protected with Alumetron" width={260} /></a> */}
-                                        <p className="text-center sblue">Click to enlarge</p>
+                                   <div
+                                          className="col-5 col-sm-5 col-md-5 col-lg-5"
+                                          style={{
+                                            position: 'relative',
+                                            backgroundColor: 'transparent',
+                                            transition: 'background-color 0.3s',
+                                          }}
+                                          onMouseEnter={(e) => (e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.3)')}
+                                          onMouseLeave={(e) => (e.target.style.backgroundColor = 'transparent')}
+                                        >
+                                          <Popup
+                                            imagelink={bill1}
+                                            alttext="new pontoon boat protected with Alumetron"
+                                            mtarget="#exampleModal1"
+                                            mid="exampleModal1"
+                                          />
+                                          <p className="text-center sblue">Click to enlarge</p>
                                     </div>
                                     <div className="col-5 col-sm-5 col-md-5 col-lg-5">
                                         <Popup 
-                                            imagelink = {newImg2}
+                                            imagelink = {bill2}
                                             alttext = "new pontoon boat protected with Alumetron"
                                             mtarget = "#exampleModal2"
                                             mid = "exampleModal2"
@@ -79,7 +85,7 @@ function New() {
                                 <p className="text-center sblue">Click to enlarge</p>
                             </div>
                         </div>
-                        <div className="row mt-4">
+                        <div className="row mt-0">
                             <div className="col">
                                 <p className="sblue">The Best Time to Protect your Aluminum Pontoons is when your boat is Brand New; before it goes in the water. It’s easier, faster and less expensive than cleaning and restoring the finish after the fact. </p>
                                 <p className="sblue">Ask your Boat Dealer to apply <b><a rel="noreferrer" target="_blank" href="https://auroramarine.com/alumetron.html">ALUMETRON</a></b> and
@@ -98,25 +104,32 @@ function New() {
                                 <div className="col">
                                       
                                         <span class=" sblue fs-2 fw-bold text-center d-flex align-items-center justify-content-center"  style={{ marginBottom: '40px'}}  >New Pontoon Boat <br /> Step by Step Calculator</span>
-                                        
-                                    <p className="fw-bold text-danger"  style={{ marginBottom: '30px'}}><em>Easy to Use, Step by Step, Automatic Calculator to:</em></p>
+                                      <div style={{ marginLeft: '20px' }}>  
+                                        <p className="fw-bold text-danger"  style={{fontSize: '20px', marginBottom: '10px'}}><em>Easy to Use!<br/> Step by Step, Automatic Calculator:</em></p>
+                                      </div>  
+                                
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <ul className="sblue">
-                                        <li>Calculate the Sq. Ft. of your pontoons</li>
-                                        <li>Determine the product you need</li>
-                                        <li>Get a Quote</li>
-                                        <li>Get your 3 Year Factory Warranty on the finish</li>
+                                    <ul className="sblue" style={{ fontSize: '18px' }}>
+                                        <li>Calculates the Sq. Ft. of Your Pontoons</li>
+                                        <li>Determines the Products You Need</li>
+                                        <li>Gives You a Quote</li>
+                                        <li>3 Year Factory Warranty</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <StepOne />
+                         <div style={{ marginBottom: '50px' }}>
+                            <p>&nbsp;</p>
+                        </div> 
                     </div>
                 </div>
-            </div>
+            </div >
+
+
         </>
     )
 }

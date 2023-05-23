@@ -78,7 +78,7 @@ function New() {
                                 <p className="text-center sblue">Click to enlarge</p>
                             </div>
                         </div>
-                        <div className="row mt-4">
+                        <div className="row mt-5">
                             <div className="col">
                                 <p className="sblue">The Best Time to Protect your Aluminum Pontoons is when your boat is Brand New; before it goes in the water. It’s easier, faster and less expensive than cleaning and restoring the finish after the fact. </p>
                                 <p className="sblue">Ask your Boat Dealer to apply <b><a rel="noreferrer" target="_blank" href="https://auroramarine.com/alumetron.html">ALUMETRON</a></b> and

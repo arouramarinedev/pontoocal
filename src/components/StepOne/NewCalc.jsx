@@ -41,17 +41,17 @@ function NewCalc() {
     <form onSubmit={handleSubmit}>
         <div className="row mt-2">
                     <div className="col mb-3 border rounded-4 border-dark-subtle bg-white pt-2 ps-1">
-                        <div className="row">
+                        <div className="row mt-3">
                             <div className="col-1"></div>
-                            <div className="col fw-bold">Pontoon #1</div>
-                            <div className="col fw-bold">Pontoon #2</div>
-                            <div className="col fw-bold">Pontoon #3</div>
+                            <div className="col fw-bold fs-5">Pontoon #1</div>
+                            <div className="col fw-bold fs-5">Pontoon #2</div>
+                            <div className="col fw-bold fs-5">Pontoon #3</div>
                         </div>
                         <div className="row">
                             <div className="col-1"></div>
                             <div className="col"></div>
-                            <div className="col"><input type="checkbox" className="form-check-input me-1 shadow-none" onChange={(e) => handleSameOne(e)} />Same</div>
-                            <div className="col"><input type="checkbox" className="form-check-input me-1 shadow-none" onChange={(e) => handleSameTwo(e)}/>Same</div>
+                            <div className="col"><input type="checkbox" className="form-check-input me-1 shadow-none"  style={{ border: '2px solid #555' }} onChange={(e) => handleSameOne(e)} /><span style={{ fontSize: '18px' }}>Same</span></div>
+                            <div className="col"><input type="checkbox" className="form-check-input me-1 shadow-none"  style={{ border: '2px solid #555' }} onChange={(e) => handleSameTwo(e)}/><span style={{ fontSize: '18px' }}>Same</span></div>
                         </div>
                         <div className="row">
                             <div className="col-1">
@@ -60,7 +60,7 @@ function NewCalc() {
                             <div className="col">
                                 <input 
                                     type="number" 
-                                    className="form-control form-control-sm shadow-none" 
+                                    className="form-control form-control-sm shadow-none"  style={{ border: '2px solid #555' }}
                                     placeholder="Length in Feet" 
                                     value={length} 
                                     onChange={(e) => dispatch(newLength(e.target.value))} 
@@ -70,7 +70,7 @@ function NewCalc() {
                             <div className="col">
                                 <input 
                                     type="number" 
-                                    className="form-control form-control-sm shadow-none" 
+                                    className="form-control form-control-sm shadow-none"  style={{ border: '2px solid #555' }}
                                     placeholder="Length in Feet" 
                                     value={length1} 
                                     onChange={(e) => dispatch(newLength1(e.target.value))}
@@ -80,7 +80,7 @@ function NewCalc() {
                             <div className="col">
                                 <input 
                                     type="number" 
-                                    className="form-control form-control-sm shadow-none" 
+                                    className="form-control form-control-sm shadow-none"  style={{ border: '2px solid #555' }}
                                     placeholder="Length in Feet" 
                                     value={length2} 
                                     onChange={(e) => dispatch(newLength2(e.target.value))}/>
@@ -93,7 +93,7 @@ function NewCalc() {
                             <div className="col">
                                 <input 
                                     type="number" 
-                                    className="form-control form-control-sm shadow-none" 
+                                    className="form-control form-control-sm shadow-none"  style={{ border: '2px solid #555' }}
                                     placeholder="Radius in Inches" 
                                     value={radius}
                                     onChange={(e) => dispatch(newRadius(e.target.value))} 
@@ -103,7 +103,7 @@ function NewCalc() {
                             <div className="col">
                                 <input 
                                     type="number" 
-                                    className="form-control form-control-sm shadow-none" 
+                                    className="form-control form-control-sm shadow-none"  style={{ border: '2px solid #555' }}
                                     placeholder="Radius in Inches" 
                                     value={radius1}
                                     onChange={(e) => dispatch(newRadius1(e.target.value))} 
@@ -113,15 +113,15 @@ function NewCalc() {
                             <div className="col">
                                 <input 
                                     type="number" 
-                                    className="form-control form-control-sm shadow-none" 
+                                    className="form-control form-control-sm shadow-none"  style={{ border: '2px solid #555' }} 
                                     placeholder="Radius in Inches" 
                                     value={radius2} 
                                     onChange={(e) => dispatch(newRadius2(e.target.value))}/>
                             </div>
                         </div>
                         <div className="row justify-content-end align-items-end my-2">
-                            <div className="col-4">
-                                <button className="btn btn-danger btn-md" type="submit">Calculate</button>
+                            <div className="col-4" style={{ marginBottom: '20px' }}>
+                                <button className="btn btn-danger btn-md"type="submit">Calculate</button>
                             </div>
                         </div>
                     </div>

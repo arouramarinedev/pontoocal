@@ -205,6 +205,8 @@ const CostComparison = () => {
     const wash2 = 0;
     const haul = 62;
     const lift = 62;
+     const coatsAlumetron2 = 0;
+    const coatsVs2 = 0;
     const wash = Math.round(sqft * 0.2);
     const coatsAlumetron = Math.round(sqft * 1.21);
     const coatsVs = Math.round(sqft * 1.61);
@@ -293,18 +295,18 @@ const CostComparison = () => {
                             </tr>
                             <tr>
                                 <td>Apply 4 coats Alumetron</td>
-                                <td className="text-end">${coatsAlumetron}</td>
+                                <td className="text-end">${coatsAlumetron2}</td>
                             </tr>
                             <tr>
                                 <td>Apply 2 coats VS721 & Buff</td>
-                                <td className="text-end">${coatsVs}</td>
+                                <td className="text-end">${coatsVs2}</td>
                             </tr>
                         </thead>
                         <tbody>
                             
 
                             <tr className="fw-bold text-success">
-                                <td>Discount</td>
+                                <td>Package Discount</td>
                                 <td>- ${discountDecide}</td>
                             </tr>
                             <tr className="fw-bold text-primary">

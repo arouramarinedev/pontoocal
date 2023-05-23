@@ -89,11 +89,13 @@ function SecondPage() {
         <div className="calculator container bg-body">
           <div className="row ms-1">
             <div className="col">
-              <h2 className="text-danger text-center fw-bold my-4">Your Pontoons Total Area is: (</h2>
+              <h2 className="text-danger text-center fw-bold my-4">Your Pontoons Total Area is: </h2>
               <h1 className="text-danger text-center fw-bold"><span className="border border-dark-subtle shadow rounded bg-white px-2">{Math.round(sqFt)} Sq. Ft.</span></h1>
-              <h2 className="text-danger fw-bold mt-3"><em>Step 2.</em></h2>
-              <p className="sblue ms-5 me-3 text-center" style={{ fontSize: '18px', }}>To select the right products to protect your new pontoons, select which item best
-                describes your pontoons:</p>
+              <h2 className="text-danger fw-bold mt-3" style={{ marginLeft: '70px'}}><em>Step 2.</em></h2>
+              <div  className="col" style={{ marginLeft: '70px' }}>
+                  <p className="sblue ms-5 me-3 " style={{ fontSize: '22px',  }}>To select the right products to protect your new pontoons,<br/> Choose which best
+                    describes your pontoons:</p>
+              </div>      
             </div>
           </div>
           <div className="row ms-5 justify-content-center">
