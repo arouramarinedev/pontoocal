@@ -242,6 +242,7 @@ const Products = () => {
                     <div className="row text-center justify-content-center mt-4 sblue">
                         <div className="col-7">
                             <h4 className="fw-bold">Products Required</h4>
+                            
                         </div>
                         {/* <div className="col-2">
                                 <h4 className="fw-bold">Qty Req.</h4>

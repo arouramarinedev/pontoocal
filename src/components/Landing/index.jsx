@@ -9,7 +9,7 @@ import ScrollDownButton from './ScrollDownButton';
 import ScrollToTop from "react-scroll-to-top";
 import { FaYoutube,FaCircle, FaRegDotCircle} from 'react-icons/fa';
 import handleClick from './ScrollDown';
-
+import Modal from 'react-modal';
 
 
 function Landing() {
@@ -53,6 +53,25 @@ function Landing() {
         transition: 'background-color 0.3s ease', // Adding transition for smooth effect
     };
 
+       const [isPopupOpen, setPopupOpen] = useState(false);
+
+        const togglePopup = () => {
+            setPopupOpen(!isPopupOpen);
+        };
+
+     // Custom styles for the modal
+      const customStyles = {
+        content: {
+          width: '800px', // Adjust the width as per your requirements
+          height: '400px', // Adjust the height as per your requirements
+          margin: 'auto',
+          borderRadius: '20px',
+          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        },
+        overlay: {
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the overlay background color as per your requirements
+        },
+      };   
  
 
     return (
@@ -67,13 +86,15 @@ function Landing() {
                     </div>
                 </div>
                 <div className="row ms-1">
+                
+                      
 
                     <div className="col">
                         
                         <h6 className="text-danger fw-bold mt-2">
                           <button  type="button"
                                 className="btn btn-lg  me-4 mt-3"
-                                onClick={toggleDropdown}
+                                onClick={togglePopup}
                                 style={buttonStyle}
                                 onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
                                 
@@ -84,19 +105,30 @@ function Landing() {
                             
                             </button>
                         </h6>
-                        {isOpen && (
+                        <Modal isOpen={isPopupOpen} style={customStyles} onRequestClose={togglePopup}>
                             <div className= "border border-primary rounded mt-4">
-                              <ul className= "sblue" style={{ listStyle: 'none', fontWeight: 'bold', fontSize:"17px" }}>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Pontoons</span> Stay Clean and Shiny Year After Year</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Pride</span> of Ownership. Your Boat is a Reflection of Your Personality.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Three Year</span> Transferable Factory Warranty.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.Greater</span> Trade or Resale Value. Adding $5,000 to $10,000 is Common.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.Better</span> Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.Easier</span> Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.Lasts</span> up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
+                              <ul className= "sblue" style={{ listStyle: 'none', fontWeight: 'bold', fontSize:"20px" }}>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Pontoons</span> Stay Clean and Shiny Year After Year</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Pride</span> of Ownership. Your Boat is a Reflection of Your Personality.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Three Year</span> Transferable Factory Warranty.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.Greater</span> Trade or Resale Value. Adding $5,000 to $10,000 is Common.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.Better</span> Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.Easier</span> Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.Lasts</span> up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
                               </ul>
                             </div>
-                        )}  
+                            <button onClick={togglePopup}style={{
+                                            display: 'block',
+                                            width: '150px',
+                                            height: '40px',
+                                            margin: '20px auto', // Adds spacing between the button and content
+                                            backgroundColor: 'red',
+                                            color: 'white',
+                                            fontSize: '20px',
+                                            borderRadius: '10px',
+                                          }}>Close Popup</button>
+                          </Modal> 
+                         
                     </div>
                     <h7 className="text-danger fw-bold mt-42">
                            

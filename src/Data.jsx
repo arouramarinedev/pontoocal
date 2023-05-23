@@ -3,6 +3,7 @@ const DATA200 = [
     {
         id: 0,
         title: "Alumabuff",
+        description: "mark",
         qty: 1.4,
         bottle: 2,
         price: 97.98,
@@ -11,6 +12,7 @@ const DATA200 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+        description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 19.99,
@@ -19,6 +21,7 @@ const DATA200 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+        description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -27,6 +30,7 @@ const DATA200 = [
     {
         id: 1,
         title: "Alumetron",
+        description: "mark",
         qty: 1.4,
         bottle: 4,
         price: 199.96,
@@ -35,6 +39,7 @@ const DATA200 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+        description: "mark",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -56,6 +61,7 @@ export const NDATA200 = [
     {
         id: 0,
         title: "Alumabuff",
+        description: "mark",
         qty: 1.4,
         bottle: 2,
         price: 97.98,
@@ -64,6 +70,7 @@ export const NDATA200 = [
     {
         id: 4,
         title: "Linear Buffer P",
+        description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 274.99,
@@ -72,6 +79,7 @@ export const NDATA200 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+        description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,

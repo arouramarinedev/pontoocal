@@ -11,12 +11,8 @@ const Popup = ({ imagelink, alttext, mtarget, mid }) => {
         src={imagelink}
         alt={alttext}
         width={260}
-        style={{
-          transition: 'transform 0.3s',
-          ':hover': {
-            transform: 'scale(1.1)',
-          },
-        }}
+       
+        
       />
 
       {/* Modal */}
