@@ -3,7 +3,7 @@ const DATA200 = [
     {
         id: 0,
         title: "Alumabuff",
-        description: "mark",
+        description:  "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 2,
         price: 97.98,
@@ -12,7 +12,7 @@ const DATA200 = [
     {
         id: 2,
         title: "Boat Clean Plus",
-        description: "mark",
+        description:"Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 1,
         price: 19.99,
@@ -21,7 +21,7 @@ const DATA200 = [
     {
         id: 3,
         title: "Marine Power Mitt",
-        description: "mark",
+        description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -30,7 +30,7 @@ const DATA200 = [
     {
         id: 1,
         title: "Alumetron",
-        description: "mark",
+        description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 4,
         price: 199.96,
@@ -39,7 +39,7 @@ const DATA200 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
-        description: "mark",
+        description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -61,7 +61,7 @@ export const NDATA200 = [
     {
         id: 0,
         title: "Alumabuff",
-        description: "mark",
+        description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 2,
         price: 97.98,
@@ -79,7 +79,7 @@ export const NDATA200 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
-        description: "mark",
+        description: "Non-scratching  ",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -88,6 +88,7 @@ export const NDATA200 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+         description:  "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -96,6 +97,7 @@ export const NDATA200 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description:"Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 1,
         price: 19.99,
@@ -105,6 +107,7 @@ export const NDATA200 = [
     {
         id: 2,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 4,
         price: 199.96,
@@ -113,6 +116,7 @@ export const NDATA200 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description:"Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -132,6 +136,7 @@ export const DATA250 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 2,
         price: 97.98,
@@ -140,6 +145,7 @@ export const DATA250 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+         description:"Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 1,
         price: 19.99,
@@ -148,6 +154,7 @@ export const DATA250 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -156,6 +163,7 @@ export const DATA250 = [
     {
         id: 1,
         title: "Alumetron",
+         description:"Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 5,
         price: 249.95,
@@ -164,6 +172,7 @@ export const DATA250 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+         description:"Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.", 
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -183,6 +192,7 @@ export const NDATA250 = [
     {
         id: 0,
         title: "Alumabuff",
+         description:"Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.", 
         qty: 1.4,
         bottle: 2,
         price: 97.98,
@@ -191,6 +201,7 @@ export const NDATA250 = [
     {
         id: 4,
         title: "Linear Buffer P",
+        description:"mark",
         qty: 1.4,
         bottle: 1,
         price: 249.95,
@@ -199,6 +210,7 @@ export const NDATA250 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -207,6 +219,7 @@ export const NDATA250 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+         description:"Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -215,6 +228,7 @@ export const NDATA250 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",        
         qty: 1.4,
         bottle: 1,
         price: 19.99,
@@ -223,6 +237,7 @@ export const NDATA250 = [
     {
         id: 2,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 5,
         price: 249.95,
@@ -231,6 +246,7 @@ export const NDATA250 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description:"Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.", 
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -250,6 +266,7 @@ export const DATA300 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 3,
         price: 146.97,
@@ -258,6 +275,7 @@ export const DATA300 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+         description:"Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -266,6 +284,7 @@ export const DATA300 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+         description:"Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.", 
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -274,6 +293,7 @@ export const DATA300 = [
     {
         id: 1,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 5,
         price: 249.95,
@@ -282,6 +302,7 @@ export const DATA300 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -301,6 +322,7 @@ export const NDATA300 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 3,
         price: 146.97,
@@ -309,6 +331,7 @@ export const NDATA300 = [
     {
         id: 4,
         title: "Linear Buffer P",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 274.99,
@@ -317,6 +340,7 @@ export const NDATA300 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -325,6 +349,7 @@ export const NDATA300 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 1,
         price: 21.99,
@@ -333,6 +358,7 @@ export const NDATA300 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -341,6 +367,7 @@ export const NDATA300 = [
     {
         id: 2,
         title: "Alumetron",
+         description:"Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: 5,
         price: 249.95,
@@ -349,6 +376,7 @@ export const NDATA300 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -368,6 +396,7 @@ export const DATA350 = [
     {
         id: 0,
         title: "Alumabuff",
+        description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 3,
         price: 146.97,
@@ -376,6 +405,7 @@ export const DATA350 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+        description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -384,6 +414,7 @@ export const DATA350 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+        description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -392,6 +423,7 @@ export const DATA350 = [
     {
         id: 1,
         title: "Alumetron",
+        description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal.',
         price: 269.99,
@@ -400,6 +432,7 @@ export const DATA350 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+        description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -418,6 +451,7 @@ export const NDATA350 = [
     {
         id: 0,
         title: "Alumabuff",
+        description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 3,
         price: 146.97,
@@ -426,6 +460,7 @@ export const NDATA350 = [
     {
         id: 4,
         title: "Linear Buffer P",
+        description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 274.99,
@@ -434,6 +469,7 @@ export const NDATA350 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+        description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -442,6 +478,7 @@ export const NDATA350 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+        description:"Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -450,6 +487,7 @@ export const NDATA350 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -458,6 +496,7 @@ export const NDATA350 = [
     {
         id: 2,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal.',
         price: 296.99,
@@ -466,6 +505,7 @@ export const NDATA350 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 2,
         price: 149.98,
@@ -485,6 +525,7 @@ export const DATA450 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 4,
         price: 195.96,
@@ -493,6 +534,7 @@ export const DATA450 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+         description:  "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -501,6 +543,7 @@ export const DATA450 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -509,6 +552,7 @@ export const DATA450 = [
     {
         id: 1,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal.',
         price: 296.99,
@@ -517,6 +561,7 @@ export const DATA450 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 3,
         price: 224.97,
@@ -536,6 +581,7 @@ export const NDATA450 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 4,
         price: 195.96,
@@ -544,6 +590,7 @@ export const NDATA450 = [
     {
         id: 4,
         title: "Linear Buffer P",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 274.99,
@@ -552,6 +599,7 @@ export const NDATA450 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -560,6 +608,7 @@ export const NDATA450 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -568,6 +617,7 @@ export const NDATA450 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -576,6 +626,7 @@ export const NDATA450 = [
     {
         id: 2,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal.',
         price: 296.99,
@@ -584,6 +635,7 @@ export const NDATA450 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 3,
         price: 224.97,
@@ -603,6 +655,7 @@ export const DATA500 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 4,
         price: 195.96,
@@ -611,6 +664,7 @@ export const DATA500 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -619,6 +673,7 @@ export const DATA500 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+         description:  "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -627,6 +682,7 @@ export const DATA500 = [
     {
         id: 1,
         title: "Alumetron",
+         description:"Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal. + 1 Bott.',
         price: 346.98,
@@ -635,6 +691,7 @@ export const DATA500 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 3,
         price: 224.97,
@@ -654,6 +711,7 @@ export const NDATA500 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 4,
         price: 195.96,
@@ -662,6 +720,7 @@ export const NDATA500 = [
     {
         id: 4,
         title: "Linear Buffer P",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 274.99,
@@ -670,6 +729,7 @@ export const NDATA500 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -678,6 +738,7 @@ export const NDATA500 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -686,6 +747,7 @@ export const NDATA500 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 2,
         price: 39.98,
@@ -694,6 +756,7 @@ export const NDATA500 = [
     {
         id: 2,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal. + 1 Bott.',
         price: 346.98,
@@ -702,6 +765,7 @@ export const NDATA500 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 3,
         price: 224.97,
@@ -721,6 +785,7 @@ export const DATA600 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 5,
         price: 244.95,
@@ -729,6 +794,7 @@ export const DATA600 = [
     {
         id: 2,
         title: "Boat Clean Plus",
+         description: "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 3,
         price: 59.97,
@@ -737,6 +803,7 @@ export const DATA600 = [
     {
         id: 3,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -745,6 +812,7 @@ export const DATA600 = [
     {
         id: 1,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal. + 2 Bott.',
         price: 396.97,
@@ -753,6 +821,7 @@ export const DATA600 = [
     {
         id: 4,
         title: "VS721 Bottom Coat",
+         description: "Low Surface Energy Overcoat. Below the waterline VS721 ® functions as a foul release coating reducing attachment of marine growth.It also adds durability and increases the ALUMETRON ® factory warranty from 1 to 3 years.",
         qty: 1.4,
         bottle: 4,
         price: 299.96,
@@ -771,6 +840,7 @@ export const NDATA600 = [
     {
         id: 0,
         title: "Alumabuff",
+         description: "Fast Acting Aluminum Buffing Cream. Use ALUMABUFF ® with a MARINE POWER MITT ® to quickly clean your pontoons and strip away pollutants.",
         qty: 1.4,
         bottle: 5,
         price: 289.95,
@@ -779,6 +849,7 @@ export const NDATA600 = [
     {
         id: 4,
         title: "Linear Buffer P",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 274.99,
@@ -787,6 +858,7 @@ export const NDATA600 = [
     {
         id: 1,
         title: "Alumabuff Pad Kit",
+         description: "mark",
         qty: 1.4,
         bottle: 1,
         price: 36.99,
@@ -795,6 +867,7 @@ export const NDATA600 = [
     {
         id: 5,
         title: "Marine Power Mitt",
+         description: "Non-scratching Scrub Pad. Synthetic Fiber Power Mitt Turbocharges Boat Cleaning Action! Reduces labor by up to ½.",
         qty: 1.4,
         bottle: 2,
         price: 43.98,
@@ -803,6 +876,7 @@ export const NDATA600 = [
     {
         id: 3,
         title: "Boat Clean Plus",
+         description:  "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 3,
         price: 59.97,
@@ -811,6 +885,7 @@ export const NDATA600 = [
     {
         id: 2,
         title: "Alumetron",
+         description: "Protects Aluminum against Corrosion, Stains, Streaking. ALUMETRON is a clear polymer coating that bonds chemically to aluminum for a smooth, durable, protective finish that resists environmental damage and attachment of dirt. Lasts up to 10 years. Guaranteed for 1 to 3 Years. ",
         qty: 1.4,
         bottle: '1 Gal. + 2 Bott.',
         price: 396.97,
@@ -819,6 +894,7 @@ export const NDATA600 = [
     {
         id: 6,
         title: "VS721 Bottom Coat",
+         description:  "Free Rinsing Cleaner, Degreaser, Concentrate. Use as final wash to remove all residue before applying ALUMETRON ®. Learn More About Boat Clean Plus ®",
         qty: 1.4,
         bottle: 4,
         price: 299.96,

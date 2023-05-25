@@ -63,7 +63,7 @@ function Landing() {
       const customStyles = {
         content: {
           width: '800px', // Adjust the width as per your requirements
-          height: '400px', // Adjust the height as per your requirements
+          height: '600px', // Adjust the height as per your requirements
           margin: 'auto',
           borderRadius: '20px',
           boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
@@ -85,18 +85,19 @@ function Landing() {
                             for New Pontoons up to {Math.round(sqft)} Sq. Ft.</h2>
                     </div>
                 </div>
-                <div className="row ms-1">
+                <div className="row ms-1 ml-2">
                 
                       
 
-                    <div className="col">
+                    <div className="col ml-5">
                         
-                        <h6 className="text-danger fw-bold mt-2">
+                        <h6 className="text-danger fw-bold mt-2 ml-4 ">
                           <button  type="button"
-                                className="btn btn-lg  me-4 mt-3"
+                                className="btn btn-lg  me-4 mt-3 ml-4"
                                 onClick={togglePopup}
                                 style={buttonStyle}
                                 onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
+
                                 
                               
                                 onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
@@ -106,15 +107,18 @@ function Landing() {
                             </button>
                         </h6>
                         <Modal isOpen={isPopupOpen} style={customStyles} onRequestClose={togglePopup}>
-                            <div className= "border border-primary rounded mt-4">
+                            <div className= "border border-primary rounded mt-4 ml-4">
                               <ul className= "sblue" style={{ listStyle: 'none', fontWeight: 'bold', fontSize:"20px" }}>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Pontoons</span> Stay Clean and Shiny Year After Year</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Pride</span> of Ownership. Your Boat is a Reflection of Your Personality.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Three Year</span> Transferable Factory Warranty.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.The Best time to Protect Your Pontoons against Enviormental Damage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(stains, Tarnish, Etching, Pitting, Corrosion, Oxidation), is when they are Bran &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new, before you lanch your boat. You'll save the time and cost of restoring &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;them later.</span> </li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Pontoons</span> Stay Clean and Shiny Year After Year</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Pride</span> of Ownership. Your Boat is a Reflection of Your Personality.</li>
                                 <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.Greater</span> Trade or Resale Value. Adding $5,000 to $10,000 is Common.</li>
                                 <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.Better</span> Fuel Economy. Reduce Fuel Consumption Up to 20%.</li>
                                 <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.Easier</span> Maintenance. Pontoons Can Stay Fouling Free All Summer.</li>
-                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.Lasts</span> up to 10 Years. Save Money by Reducing Costly Annual Maintenance.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.Make</span> .your boat Sal Water REady. ALUMETRON and VS712 prevents &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chloride ion Pitting Corrosion from salt.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.ALUMETRON</span> and VS712 can last up to 10 years, even in constant water &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;immersion. Save Money by Reducing Costly Annual Maintenance.</li>
+                                <li><span className="ms-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.Get</span> a 3 Year Transferable Factory Warranty.</li>
+
                               </ul>
                             </div>
                             <button onClick={togglePopup}style={{
@@ -126,7 +130,7 @@ function Landing() {
                                             color: 'white',
                                             fontSize: '20px',
                                             borderRadius: '10px',
-                                          }}>Close Popup</button>
+                                          }}>Close Pop-up</button>
                           </Modal> 
                          
                     </div>

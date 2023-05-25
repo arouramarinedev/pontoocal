@@ -33,6 +33,7 @@ const Products = () => {
                     title={item.title}
                     bottle={item.bottle}
                     price={item.price}
+                    description={item.description}
                 />
             );
         })
@@ -44,6 +45,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                       description={item.description}
                     />
                 );
             })
@@ -56,6 +58,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -67,6 +70,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -79,6 +83,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -90,6 +95,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -102,6 +108,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -113,6 +120,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -126,6 +134,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -137,6 +146,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -150,6 +160,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -161,6 +172,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -173,6 +185,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -184,6 +197,7 @@ const Products = () => {
                         title={item.title}
                         bottle={item.bottle}
                         price={item.price}
+                        description={item.description}
                     />
                 );
             })
@@ -239,11 +253,16 @@ const Products = () => {
                 <div className="col-11 bg-white mx-5 py-3 border rounded-3">
 
 
-                    <div className="row text-center justify-content-center mt-4 sblue">
-                        <div className="col-7">
+                    <div className="row text-center justify-content-center mt-3=4 sblue">
+                        <div className="col-4">
                             <h4 className="fw-bold">Products Required</h4>
-                            
+
                         </div>
+                         <div className="col-3">
+                            <h4 className="fw-bold">Description</h4>
+
+                        </div>
+                        
                         {/* <div className="col-2">
                                 <h4 className="fw-bold">Qty Req.</h4>
                             </div> */}
