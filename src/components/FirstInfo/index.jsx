@@ -116,7 +116,7 @@ function New() {
                                         <li>Calculates the Sq. Ft. of Your Pontoons</li>
                                         <li>Determines the Products You Need</li>
                                         <li>Gives You a Quote</li>
-                                        <li>3 Year Factory Warranty</li>
+                                        <li>Get Your 3 Year Transferable Factory Warranty</li>
                                     </ul>
                                 </div>
                             </div>

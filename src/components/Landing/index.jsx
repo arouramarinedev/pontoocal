@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import CostComparison from './CostComparison'
 import HowTo from './HowTo'
@@ -36,6 +38,15 @@ function Landing() {
       };
 
        const HowToRef = useRef(null);
+       function ScrollToTop() {
+          const { pathname } = useLocation();
+
+          useEffect(() => {
+            window.scrollTo(0, 0);
+          }, [pathname]);
+
+          return null;
+        };
 
   function scrollToHowTo() {
         HowToRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -47,10 +58,14 @@ function Landing() {
     };
 
     const buttonStyle = {
-        backgroundColor: '#D3D3D3',
-        color: 'white',
+        backgroundColor: '#ffffff',
+        color: 'blue',
         fontSize: '1.5rem',
-        transition: 'background-color 0.3s ease', // Adding transition for smooth effect
+        transition: 'background-color 0.3s ease',
+        border: "1px solid #00008B",
+        borderRadius: "10px", // Adding transition for smooth effect
+         padding: "0.0rem 1rem",
+         marginLeft: "4.5rem" // Adjust the marginLeft value as needed
     };
 
        const [isPopupOpen, setPopupOpen] = useState(false);
@@ -85,13 +100,13 @@ function Landing() {
                             for New Pontoons up to {Math.round(sqft)} Sq. Ft.</h2>
                     </div>
                 </div>
-                <div className="row ms-1 ml-2">
+                <div className="row ms-1 ">
                 
                       
 
                     <div className="col ml-5">
                         
-                        <h6 className="text-danger fw-bold mt-2 ml-4 ">
+                        <h6 className="text-danger fw-bold mt-2 ml- ">
                           <button  type="button"
                                 className="btn btn-lg  me-4 mt-3 ml-4"
                                 onClick={togglePopup}
@@ -100,8 +115,8 @@ function Landing() {
 
                                 
                               
-                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
-                                <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
+                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#ffffff'; }}>
+                                <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#00008B", fontSize:"20px"}} />
                                  &nbsp;&nbsp;&nbsp;Top 10 Benfits of protecting your Pontoons
                             
                             </button>
@@ -134,34 +149,33 @@ function Landing() {
                           </Modal> 
                          
                     </div>
-                    <h7 className="text-danger fw-bold mt-42">
-                           
-                           <button type="button" 
-                                
-                                className="btn btn-lg me-4 mt-3"
-                                onClick={handleClick}
-                                style={buttonStyle}
-                                onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
-                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
-                                <FaYoutube icon="fa-brands fa-youtube"  
-                                style={{color: "#000000", fontSize: "33px"}} />
-                                &nbsp;&nbsp;&nbsp;How To YouTube Video?
-                            
-                        
-
-                          </button>
+                   <h7 className="text-danger fw-bold mt-42">
+                      <button
+                        type="button"
+                        className="btn btn-lg me-4 mt-2"
+                        onClick={handleClick}
+                        style={{ ...buttonStyle, color: "blue", border: "1px solid #00008B" }}
+                        onMouseEnter={(e) => {
+                          e.target.style.backgroundColor = "#77ccff";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.backgroundColor = "#ffffff";
+                        }}
+                      >
+                        <FaYoutube icon="fa-brands fa-youtube" style={{ color: "#00008B", fontSize: "33px" }} />
+                        &nbsp;&nbsp;&nbsp;How To YouTube Video?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </button>
                     </h7>
 
                     <h8 className="text-danger fw-bold mt-2">
                             <button  type="button"
-                                className="btn btn-lg me-4 mt-3"
+                                className="btn btn-lg me-4 mt-2"
                                 onClick={scrollToBottom}
                                 style={buttonStyle}
                                 onMouseEnter={(e) => { e.target.style.backgroundColor = '#77ccff'; }}
-                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#D3D3D3'; }}>
-                           <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#000000", fontSize:"20px"}} />
-                            &nbsp;&nbsp;&nbsp;Dealer Applied VS DIY Comparison
-                           
+                                onMouseLeave={(e) => { e.target.style.backgroundColor = '#ffffff'; }}>
+                           <FaRegDotCircle icon="fa-solid fa-circle-dot" style={{color: "#00008B", fontSize:"20px"}} />
+                            &nbsp;&nbsp;&nbsp;Dealer Applied VS DIY Comparison&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                           
                           </button>
                     </h8>
                                   
@@ -172,6 +186,7 @@ function Landing() {
                     <Products />
                     <Buttons />
                 </div>
+
                 
                 <section  id="my-section">
                     <HowTo />
